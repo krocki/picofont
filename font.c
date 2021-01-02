@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
 
       line = font[argv[1][k]][i];
 
-      for (int j=fontw-1; j>=0; j--) {
+      for (int j=0; j<fontw; j++) {
         putchar((line & (1<<j)) ? '#' : '.');
       }
     }
